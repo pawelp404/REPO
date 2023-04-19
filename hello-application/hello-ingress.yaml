@@ -4,7 +4,7 @@ metadata:
   creationTimestamp: "2022-12-12T14:05:10Z"
   generation: 1
   name: ingress-hello
-  namespace: default
+  namespace: hello-ns
   resourceVersion: "146090"
   uid: 7b30b0c0-9fc4-4006-8ba6-b424753c2576
 spec:
