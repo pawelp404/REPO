@@ -14,4 +14,6 @@ spec:
        - sh
        - "-c"
        - echo Hello world! && sleep 3600
+     - name: nginx-container
+       image: nginx
 
