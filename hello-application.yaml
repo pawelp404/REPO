@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hello-deploy
+  namespace: hello-ns
+spec:
+  selector:
+    matchLabels:
+      app: hello-app
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        run: hello-app
+        app: hello-app
+    spec:
+      containers:
+        - name: hello-container
+          image: gcr.io/google-samples/node-hello:1.0
+          ports:
+            - containerPort: 8080
+              protocol: TCP
